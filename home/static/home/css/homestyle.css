@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.menu {
+  display: inline-block;
+}
+
+.menu ul,
+.opt ul {
+  padding: 0px 10px;
+  align-items: center;
+  overflow: hidden;
+}
+
+.menu ul li,
+.opt ul li {
+  display: inline;
+  list-style-type: none;
+}
+
+.menu ul li a,
+.opt ul li a {
+  display: inline-block;
+  color: whitesmoke;
+  padding: 8px 16px;
+  text-decoration: none;
+  overflow: hidden;
+  font-size: 2.2vh;
+}
+
+.menu ul li a:hover,
+.opt ul li a:hover {
+  font-size: 18px;
+  background: white;
+  color: red;
+  border-radius: 5px;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  background-color: black;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+.opt {
+  color: white;
+}
+/* add section */
+#add {
+  height: 100vh;
+  background-color: rgb(226, 194, 255);
+  border-radius: 10px;
+  margin: 10px 5px;
+}
+.add-header{
+  text-align: center;
+}
+.add-body img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+/* Services */
+#service {
+  height: 100vh;
+  background-color: rgb(158, 203, 255);
+  margin: 10px 5px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+#service h1 {
+  text-align: center;
+}
+.service-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.ser-inner {
+  margin: 5px;
+  background-color: #FFCC00;
+  width: 25vw;
+  height: 70vh;
+  border-radius: 10px;
+}
+.banner{
+  height: 30vh;
+  width: 20vw;
+  /* padding-top: 20px; */
+  display: block;
+  margin-left:auto;
+  margin-right:auto;
+}
+.inner-btn{
+  margin: 230px 130px;
+}
+
+/* About section goes here*/
+
+#aboutus {
+  height: 100vh;
+  background-color: rgba(255, 0, 30, 0.169);
+  border-radius: 10px;
+  margin: 10px 5px;
+}
+
+#aboutus h1 {
+  text-align: center;
+}
+/* Contact Section  */
+#contact {
+  height: 50vh;
+  background-color: rgb(187, 255, 249);
+  border-radius: 10px;
+  margin: 10px 5px;
+  display: flex;
+  flex-direction: column;
+}
+#contact h1 {
+  text-align: center;
+}
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+}
+.map iframe {
+  border-radius: 10px;
+  height: 40vh;
+  width: 48vw;
+  padding: 5px;
+}
+.info {
+  border-radius: 10px;
+  background-color: red;
+  width: 47vw;
+  height: 40vh;
+  padding: 5px;
+}
+
+.info span a {
+  color: black;
+  font-size: 50px;
+  padding: 10px;
+  text-decoration: none;
+}
+.info h2, h3 {
+  padding: 8px;
+}
+/* Request page design*/
+.req-head {
+  padding: 10px;
+}
+/* .req-info {
+  background-color: aqua;
+  margin: 10px;
+  width: 100%;
+} */
+.req-whole-div {
+  background-color: blueviolet;
+  height: auto;
+  border-radius: 10px;
+  margin: 10px;
+}
+.header-two {
+  text-align: center;
+  background-color: orange;
+  margin: 10px 600px;
+  padding: 10px;
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+}
+.table-custom {
+  margin: 7px;
+}
+
+.request-form {
+  margin: 10px;
+  background-color: orange;
+  border-radius: 10px;
+}
+
+.header-three {
+  text-align: center;
+}
+.custom-form {
+  padding: 10px;
+}
+
+.custom-btn {
+  text-align: center;
+}
+
+/* scroll top btn  */
+
+.scroll-top-btn {
+  background: white;
+  position: fixed;
+  bottom: 16px;
+  right: 32px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  color: #1f1f1f;
+  text-decoration: none;
+  /* opacity: 0; */
+  /* pointer-events: none; */
+  transition: all 0.4s;
+}
+
+.scroll-top-btn.active {
+  bottom: 32px;
+  pointer-events: auto;
+  opacity: 1;
+}

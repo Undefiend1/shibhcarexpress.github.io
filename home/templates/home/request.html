@@ -1,0 +1,15 @@
+{% extends "home/base.html" %}
+{% block content%}
+    <div class="request-form">
+        {%if submitted %}
+            <h2 class="text-center">Your Request is Submitted Successfully</h2>
+        {% else %}
+        <h1 class="header-three">Enter Your Information</h1>
+        <form action="" method="POST" class="custom-form">
+            {%csrf_token%}
+            {{form.as_p}}
+            <button type="submit" class="btn btn-success text-center">Submit</button>
+        </form>
+        {% endif %}
+    </div>
+{%endblock%}

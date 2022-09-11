@@ -1,0 +1,61 @@
+{% extends "home/base.html" %}
+{% load static %}
+{% block content%}
+<div id="add">
+    <div class="add-header">
+        <h1>Advertisement</h1>
+    </div>
+    <div class="add-body">
+        <img src="{{adds.image.url}}" alt="">
+    </div>
+</div>
+<div id="service">
+    <br>
+    <h1>Services</h1>
+    <div class="service-main">
+        <div class="ser-inner">
+            <img src="{% static 'home/img/dhl-logo.jpg' %}" alt="" class="banner">
+            <a href="https://www.dhl.com/bd-en/home.html?locale=true" class="btn btn-primary inner-btn"
+                target="_blank">Load More</a>
+        </div>
+        <div class="ser-inner">
+            <a href="#" class="btn btn-primary inner-btn">Load More</a>
+        </div>
+        <div class="ser-inner">
+            <a href="#" class="btn btn-primary inner-btn">Load More</a>
+        </div>
+        <div class="ser-inner">
+            <a href="#" class="btn btn-primary inner-btn">Load More</a>
+        </div>
+
+    </div>
+</div>
+<div id="aboutus">
+    <h1>About Us</h1>
+</div>
+<div id="contact">
+    <h1>Contact Us</h1>
+    <div class="contact-info">
+        <div class="info">
+            <h2>Email: shibcharexpress2022@gmail.com</h2>
+            <h3>Number: 01316-661668, 01814-181320 ,01893-421184</h3>
+            <h2>Address: abcdxyz@gmail.com</h2>
+            <span>
+                <a href="https://m.me/shibchar.nasir" target="_blank">
+                    <i class="fa-brands fa-facebook-messenger"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </span>
+            <span></span>
+        </div>
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d937774.9760362104!2d89.04692123124995!3d23.345365600000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375577637dfaa78f%3A0x775a78cd0a3a7e0d!2sSundarban%20Courier%20Service%20Shibchar%20Branch%20%26%20Nasir%20Telecom!5e0!3m2!1sen!2sbd!4v1662755654909!5m2!1sen!2sbd"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</div>
+{%endblock%}
